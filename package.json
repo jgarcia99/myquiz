@@ -1,0 +1,23 @@
+{
+  "name": "myquiz",
+  "version": "1.0.0",
+  "description": "angular quiz",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgarcia99/myquiz.git"
+  },
+  "author": "Josuel Garcia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgarcia99/myquiz/issues"
+  },
+  "homepage": "https://github.com/jgarcia99/myquiz#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-gh-pages": "^0.5.2"
+  }
+}
