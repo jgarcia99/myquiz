@@ -1,0 +1,3 @@
+[submodule "/myquiz"]
+    path = /myquiz
+    url = git://github.com/jgarcia99/myquiz.git
