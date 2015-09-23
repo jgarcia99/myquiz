@@ -2,7 +2,7 @@
 
 	var app = angular.module('myQuiz', []);
 
-    app.controller('QuizController', ['$scope', '$http', '$sce', function($scope, $http, $sce){
+    app.controller('QuizController', ['$scope', '$http', function($scope, $http){
 
         $scope.score = 0;
         $scope.activeQuestion = -1;
@@ -47,17 +47,6 @@
           return $scope.activeQuestion += 1;
         };
 
-        $scope.createShareLinks = function(percentage) {
-            var url = 'http://jgarcia99.github.io/portfolio';
-
-            var emailLink = '<a class="btn email" href="mailto:someone@example.com?subject=Try to beat my quiz score!&amp;body=I scored a '+percentage+'% on this quiz about Saturn. Try to beat my score at '+url+'">Email a friend</a>';
-
-            var twitterLink = '<a class="btn twitter" target="_blank" href="http://twitter.com/share?text=I scored a '+percentage+'% on this quiz about Saturn. Try to beat my score at&amp;hashtags=SaturnQuiz&amp;url='+url+'">Tweet you score</a>';
-
-            var newMarkup = emailLink + twitterLink;
-
-            return $sce.trustAsHtml(newMarkup);
-        };
 
 
     }]);
